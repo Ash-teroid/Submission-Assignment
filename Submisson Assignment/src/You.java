@@ -1,6 +1,6 @@
 /**
  * 
- * @author //Put your first and last name here
+ * @author //Ashley Lashenick
  * 
  * 
  * Assignment Instructions:
@@ -24,7 +24,34 @@ public class You{
 	private String lastName;
 	private String favoriteAnimal;
 	private int age;
-
-	// Write your code here
 	
+	//Sets all private global variables to your information
+	public You()
+	{
+		firstName = "Ashley";
+		lastName = "Lashenick";
+		favoriteAnimal = "dogs";
+		age = 16;
+	}
+	
+	//Returns a String of your first and last name with a space in between
+	public String getFullName()
+	{
+		return firstName + " " + lastName;
+	}
+	
+	//Sets favoriteAnimal to animal and returns it
+	public String setFavoriteAnimal(String animal)
+	{
+		favoriteAnimal = animal;
+		return favoriteAnimal;
+	}
+	
+	// Prints out "Happy Birthday!", increases age by 1, and returns it
+	public int happyBirthday()
+	{
+		System.out.println("Happy Birthday!");
+		age += 1;
+		return age;
+	}
 }
